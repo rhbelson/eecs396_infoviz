@@ -103,9 +103,9 @@ plt.xticks(index + bar_width, bacteria)
 red_patch = mpatches.Patch(facecolor='#3B1DDA',edgecolor='black',hatch='///', label='Penicillin | Gram Positive')
 blue_patch = mpatches.Patch(facecolor='#149E2B',edgecolor='black',hatch='///',label='Streptomycin | Gram Positive')
 green_patch = mpatches.Patch(facecolor='#D11548',edgecolor='black',hatch='///', label='Neomycin | Gram Positive')
-red_patch2 = mpatches.Patch(facecolor='#7BC9ED',edgecolor='black',hatch='///', label='Penicillin | Gram Negative')
-blue_patch2 = mpatches.Patch(facecolor='#57E66F',edgecolor='black',hatch='///',label='Streptomycin | Gram Negative')
-green_patch2 = mpatches.Patch(facecolor='#F4D1DB',edgecolor='black',hatch='///', label='Neomycin | Gram Negative')
+red_patch2 = mpatches.Patch(facecolor='#7BC9ED',edgecolor='black', label='Penicillin | Gram Negative')
+blue_patch2 = mpatches.Patch(facecolor='#57E66F',edgecolor='black',label='Streptomycin | Gram Negative')
+green_patch2 = mpatches.Patch(facecolor='#F4D1DB',edgecolor='black', label='Neomycin | Gram Negative')
 
 
 plt.legend(handles=[red_patch, blue_patch, green_patch,red_patch2, blue_patch2, green_patch2])
