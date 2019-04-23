@@ -82,14 +82,14 @@ alpha=opacity,
 color=staining3,
 label='Neomycin | Gram Negative')
 
-patterns = ('', '', '\\', '\\', '', '', '', '', '', '', '','\\', '\\','\\', '\\',
-	'\\')
-for bar, pattern in zip(rects1, patterns):
-    bar.set_hatch(pattern)
-for bar, pattern in zip(rects2, patterns):
-    bar.set_hatch(pattern)
-for bar, pattern in zip(rects3, patterns):
-    bar.set_hatch(pattern)
+# patterns = ('', '', '\\', '\\', '', '', '', '', '', '', '','\\', '\\','\\', '\\',
+# 	'\\')
+# for bar, pattern in zip(rects1, patterns):
+#     bar.set_hatch(pattern)
+# for bar, pattern in zip(rects2, patterns):
+#     bar.set_hatch(pattern)
+# for bar, pattern in zip(rects3, patterns):
+#     bar.set_hatch(pattern)
 
 
 
@@ -99,10 +99,9 @@ plt.ylabel('Minimum Inhibitory Concentration (MIC)')
 plt.title('MIC of WW2 Antibiotics by Bacteria')
 plt.xticks(index + bar_width, bacteria)
 
-
-red_patch = mpatches.Patch(facecolor='#3B1DDA',edgecolor='black',hatch='///', label='Penicillin | Gram Positive')
-blue_patch = mpatches.Patch(facecolor='#149E2B',edgecolor='black',hatch='///',label='Streptomycin | Gram Positive')
-green_patch = mpatches.Patch(facecolor='#D11548',edgecolor='black',hatch='///', label='Neomycin | Gram Positive')
+red_patch = mpatches.Patch(facecolor='#3B1DDA',edgecolor='black',hatch='', label='Penicillin | Gram Positive')
+blue_patch = mpatches.Patch(facecolor='#149E2B',edgecolor='black',hatch='',label='Streptomycin | Gram Positive')
+green_patch = mpatches.Patch(facecolor='#D11548',edgecolor='black',hatch='', label='Neomycin | Gram Positive')
 red_patch2 = mpatches.Patch(facecolor='#7BC9ED',edgecolor='black', label='Penicillin | Gram Negative')
 blue_patch2 = mpatches.Patch(facecolor='#57E66F',edgecolor='black',label='Streptomycin | Gram Negative')
 green_patch2 = mpatches.Patch(facecolor='#F4D1DB',edgecolor='black', label='Neomycin | Gram Negative')
